@@ -1,0 +1,7 @@
+@media (max-width: 42rem) {
+  .site-nav { align-items: flex-start; flex-direction: column; padding-block: .75rem; }
+  .nav-links { gap: .5rem 1rem; }
+  .dropdown-links { right: auto; left: 0; }
+  main { padding-top: 10rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .site-header { transition: none; } }
