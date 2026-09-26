@@ -1,4 +1,25 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Contact"><div class="container page-intro"><h1>Contact</h1><p>Contact details will go here.</p></div></BaseLayout>
+
+<BaseLayout title="Contact">
+  <div class="container page-intro">
+    <h1>Contact</h1>
+    <p>curious? I’d love to hear more!</p>
+    <p>
+    feel free to reach out to
+    <a href="mailto: contact.c.garner@gmail.com"> contact.c.garner@gmail.com</a>
+    </p>
+    <p class="email-note"> *clicking the address will open a new message in your email app.</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .email-note {
+    margin-top: 0.4em;
+    font-size: 0.8rem;
+    color: #777;
+    text-align: right;
+    text-indent: 0;
+  }
+</style>
