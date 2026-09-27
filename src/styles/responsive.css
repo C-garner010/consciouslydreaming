@@ -1,7 +1,73 @@
-@media (max-width: 42rem) {
-  .site-nav { align-items: flex-start; flex-direction: column; padding-block: .75rem; }
-  .nav-links { gap: .5rem 1rem; }
-  .dropdown-links { right: auto; left: 0; }
-  main { padding-top: 10rem; }
+@media (max-width: 60rem) {
+  .site-nav {
+    min-height: 3.75rem;
+  }
+
+  .menu-toggle {
+    display: grid;
+    gap: 0.3rem;
+    padding: 0.5rem;
+    background: none;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 1.4rem;
+    height: 2px;
+    background: currentColor;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: calc(100svh - 3.75rem);
+    overflow-y: auto;
+    padding: 1rem 4vw 1.5rem;
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.is-open {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .nav-item {
+    display: block;
+    position: relative;
+    padding-right: 2rem;
+    white-space: normal;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+  
+  .nav-dropdown summary {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .dropdown-links {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: rgb(130 145 190 / 12%);
+    border: 0;
+    border-left: 1px solid #b8d4e5;
+  }
+
+  main {
+    padding-top: 6rem;
+  }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .site-header { transition: none; } }

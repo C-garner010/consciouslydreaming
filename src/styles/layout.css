@@ -1,7 +1,47 @@
-.container { width: min(100% - 2rem, var(--content-width)); margin-inline: auto; }
-main { min-height: 70vh; padding-block: 8rem 5rem; }
-.page-intro { max-width: 46rem; }
-.page-intro h1 { font-size: clamp(2.2rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 1.5rem; }
-.page-intro p { font-size: 1.125rem; }
+.container {
+    width: min(100% - clamp(2.5rem, 8vw, 7rem), 82rem);
+    margin-inline: auto;
+}
+
+main { 
+    min-height: 70vh; 
+    padding-block: 8rem 5rem; 
+}
+
+.page-intro {
+    max-width: none;
+  }
+
+.page-intro h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1.05;
+    margin-bottom: 0.6rem;
+}
+
+.page-intro h2 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.page-intro h1,
+.page-intro h2 {
+  text-align: left;
+}
+
+.page-intro p {
+  text-align: center;
+  text-indent: 0;
+}
+
+.page-intro h1 + p,
+.page-intro h2 + p,
+.section h2 + p {
+  margin-top: 2rem;
+}
+
+.page-intro p {
+    font-size: clamp(1rem, 0.85rem + 0.7vw, 1.35rem);
+}
 .section { margin-top: 4rem; }
 .section h2 { margin-bottom: 1rem; }

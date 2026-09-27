@@ -1,18 +1,58 @@
 <a class="skip-link" href="#main-content">Skip to content</a>
+
 <header class="site-header" id="site-header">
   <nav class="site-nav container" aria-label="Main navigation">
     <a class="site-brand" href="/">Consciously Dreaming</a>
-    <div class="nav-links">
-      <a href="/notes-for-the-wind/">notes for the wind</a>
-      <a href="/echoes-in-space/">echoes in space</a>
-      <details class="nav-dropdown">
-        <summary>origin of signal</summary>
-        <div class="dropdown-links">
-          <a href="/origin-of-signal/">overview</a>
-          <a href="/origin-of-signal/about/">about</a>
-          <a href="/origin-of-signal/contact/">contact</a>
-        </div>
-      </details>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="primary-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-links" id="primary-menu">
+      <div class="nav-item">
+        <a href="/notes-for-the-wind/">notes for the wind</a>
+        <details class="nav-dropdown">
+          <summary aria-label="Notes for the Wind subsections"></summary>
+          <div class="dropdown-links">
+            <a href="/notes-for-the-wind/essays/">essays</a>
+            <a href="/notes-for-the-wind/articles/">articles</a>
+            <a href="/notes-for-the-wind/fragments/">fragments</a>
+            <a href="/notes-for-the-wind/journal/">journal</a>
+            <a href="/notes-for-the-wind/poetry/">poetry</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="nav-item">
+        <a href="/echoes-in-space/">echoes in space</a>
+        <details class="nav-dropdown">
+          <summary aria-label="Echoes in Space subsections"></summary>
+          <div class="dropdown-links">
+            <a href="/echoes-in-space/design/">design</a>
+            <a href="/echoes-in-space/photography/">photography</a>
+            <a href="/echoes-in-space/experiments/">experiments</a>
+          </div>
+        </details>
+      </div>
+
+      <div class="nav-item">
+        <a href="/origin-of-signal/">origin of signal</a>
+        <details class="nav-dropdown">
+          <summary aria-label="Origin of Signal subsections"></summary>
+          <div class="dropdown-links">
+            <a href="/origin-of-signal/about/">about</a>
+            <a href="/origin-of-signal/contact/">contact</a>
+          </div>
+        </details>
+      </div>
     </div>
   </nav>
 </header>

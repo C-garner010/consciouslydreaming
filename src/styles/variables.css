@@ -1,8 +1,10 @@
 :root {
-  --background: #f7f5ef;
-  --text: #272c29;
-  --accent: #507568;
-  --border: #cbd3cc;
-  --font-body: system-ui, sans-serif;
+  --background: #172139;
+  --text: #ece9f2;
+  --accent: #d6bfe0;
+  --border: #69748e;
+  --font-heading: 'Avenir Next', Avenir, system-ui, sans-serif;
+  --font-ui: 'Avenir Next', Avenir, system-ui, sans-serif;
+  --font-body: Georgia, 'Times New Roman', serif;
   --content-width: 70rem;
 }
